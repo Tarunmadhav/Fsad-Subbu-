@@ -1,0 +1,121 @@
+FileShare Pro - Project Details
+Overview
+FileShare Pro is a secure, user-friendly, full-stack file-sharing platform. It allows users to upload, download, and share files using multiple methods, including temporary keys and QR codes. The platform is built using React for the frontend, Spring Boot for the backend, and MySQL for the database.
+Requirements
+Here's a breakdown of the requirements, combining information from both documents:
+Functional Requirements
+●	User Authentication:
+○	Secure user registration and login.
+○	JWT-based authentication.
+○	User profile management (customizable profile names, device info).
+●	File Management:
+○	File upload and download functionality.
+○	File storage with tracking.
+○	File metadata management (name, size, type, owner, upload date).
+●	File Sharing:
+○	Sharing files using 6-digit temporary keys.
+○	QR code generation and scanning for file sharing.
+○	Temporary sharing keys with expiration.
+●	Security:
+○	Secure storage of user credentials.
+○	Protection of files from unauthorized access.
+●	Responsive Design:
+○	Mobile-friendly user interface.
+Non-Functional Requirements
+●	Performance:
+○	Fast UI rendering.
+○	Efficient file upload and download speeds.
+●	Scalability:
+○	Ability to handle a growing number of users and files.
+●	Security:
+○	Secure storage of user data and files.
+○	Protection against unauthorized access.
+●	Usability:
+○	Intuitive and easy-to-use interface.
+●	Maintainability:
+○	Clean Code
+○	Well documented
+○	Modular design
+●	Deployment Flexibility:
+○	Easy deployment to various environments (cloud, containerized).
+Product Requirements Document (PRD)
+1. Introduction
+●	1.1 Product Name: FileShare Pro
+●	1.2 Product Description: A secure and efficient file-sharing platform that provides users with a variety of ways to share and manage their files.
+●	1.3 Goals:
+○	Provide a secure and reliable file-sharing solution.
+○	Offer a user-friendly experience.
+○	Support multiple file-sharing methods.
+2. Target Audience
+●	Individuals who need to share files with others.
+●	Businesses that need a secure file-sharing solution.
+3. Features
+●	3.1 User Authentication:
+○	Registration and login with secure password storage.
+○	JWT-based authentication for secure API access.
+○	User profile management (display name, device information).
+●	3.2 File Management:
+○	File upload with storage tracking and size limits.
+○	File download with access control.
+○	File metadata storage (name, type, size, upload date, owner).
+○	File listing for users.
+●	3.3 File Sharing:
+○	Generation of 6-digit temporary keys for file sharing.
+○	QR code generation for easy sharing via mobile devices.
+○	Key validation for secure downloads.
+○	Setting expiration times for shared links.
+●	3.4 System:
+○	Responsive design for desktop and mobile devices.
+○	RESTful API for frontend-backend communication.
+○	Database storage for user, file, and sharing data.
+●	3.5 Admin (Future):
+○	User management.
+○	System configuration.
+○	Monitoring and logging.
+4. User Experience (UX)
+●	Clean and intuitive user interface.
+●	Easy navigation.
+●	Responsive design for all devices.
+●	Clear and concise error messages.
+5. Technical Requirements
+●	5.1 Frontend:
+○	React.js for UI development.
+○	Vite for build tool.
+○	CSS Modules for styling.
+○	Axios for API communication.
+●	5.2 Backend:
+○	Spring Boot for the REST API.
+○	Spring Security for authentication and authorization.
+○	JWT for secure session management.
+○	MySQL for database.
+●	5.3 Database:
+○	MySQL database to store user credentials, file metadata, and sharing keys.
+●	5.4 Deployment:
+○	Frontend: Static hosting (Vercel, Netlify, Firebase Hosting).
+○	Backend: Cloud platforms (AWS, Heroku), or containerization (Docker).
+○	Database: Cloud SQL (AWS RDS, Google Cloud SQL), or self-managed MySQL.
+6. Constraints
+●	Time: Project needs to be completed within a specific timeframe.
+●	Budget: Project has a limited budget.
+●	Resources: Limited development team.
+●	Security: Application must adhere to security best practices.
+7. Future Considerations
+●	File versioning.
+●	User roles and permissions.
+●	Integration with other services.
+●	Enhanced admin panel.
+●	Detailed Analytics.
+Tech Stack
+The FileShare Pro platform utilizes the following technology stack:
+Frontend
+●	React.js: A JavaScript library for building user interfaces.
+●	Vite: A build tool that aims to provide a faster and leaner development experience for modern web projects.
+●	CSS Modules: For scoping CSS to components.
+●	Axios: A promise-based HTTP client for making requests to the backend.
+Backend
+●	Spring Boot: A Java-based framework for building web applications.
+●	Spring Security: Provides authentication and authorization.
+●	JSON Web Tokens (JWT): For secure authentication.
+●	MySQL: A relational database management system.
+Database
+●	MySQL: Stores user credentials, file metadata, and sharing keys, defining relationships between users, files, and sharing sessions.
